@@ -72,7 +72,7 @@ angular.module('starter.controllers', [])
             scanCancelled: result.cancelled,
             scanSuccess: true
           };
-          alert(result.text);
+          alert("Read code: "+result.text);
         }, function (error) {
           me.scanResults = {
             code: null,
@@ -99,7 +99,7 @@ angular.module('starter.controllers', [])
 
 
     var partial = 50;
-    var maxResults = 20 * partial;
+    var maxResults = 10 * partial;
     $scope.searchResult = [];
     $scope.maxResults = maxResults;
     $scope.currentMax = 0;
