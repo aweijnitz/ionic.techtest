@@ -11,6 +11,14 @@ See: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-wit
 ### Android SDK and/or XCode
 You need these to preview your apps.
 
+### Ionic
+
+```npm install -g cordova ionic```
+
+```sudo npm -g install ios-sim```
+
+See: http://ionicframework.com/getting-started/
+
 
 ## Clone this repo and install
 
@@ -42,6 +50,17 @@ chrome://inspect/#devices
 ```ionic emulate android```
 
 ```ionic emulate ios```
+
+
+## Share with testers
+```ionic upload``` 
+
+```ionic share EMAIL```
+
+
+See: http://blog.ionic.io/invite-a-friend/
+
+See: http://ionicframework.com/docs/cli/uploading_viewing.html
 
 
 ## Build for release 
