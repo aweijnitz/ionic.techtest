@@ -1,1 +1,25 @@
-/* Empty. Add your own CSS if you like */
+table {
+    border-collapse: separate;
+    border-spacing: 4px;
+    table-layout: fixed;
+}
+
+td {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+}
+
+.brandRed {
+    color: whitesmoke;
+    background-color: #db0000;
+}
+
+.centerImg {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+}

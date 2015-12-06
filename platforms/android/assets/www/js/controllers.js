@@ -87,7 +87,7 @@ angular.module('starter.controllers', [])
       $scope.closeScan();
 
     };
-    
+
     $scope.searchProduct = function () {
       console.log('GO TO SEARCH');
       $state.go('app.searchResult');

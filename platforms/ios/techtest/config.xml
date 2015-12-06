@@ -14,14 +14,11 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <feature name="BarcodeScanner">
-        <param name="ios-package" value="CDVBarcodeScanner" />
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
     </feature>
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
-    </feature>
-    <feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
     </feature>
     <feature name="SplashScreen">
         <param name="ios-package" value="CDVSplashScreen" />
@@ -35,6 +32,9 @@
     <preference name="StatusBarStyle" value="lightcontent" />
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="ios-package" value="CDVBarcodeScanner" />
     </feature>
     <name>techtest</name>
     <description>
