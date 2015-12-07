@@ -3,41 +3,8 @@ angular.module('starter.controllers', [])
   .controller('AppCtrl', function ($scope, $ionicModal) {
     console.log('AppCtrl created');
 
+    // Scheduled for removal (StartCrtl below replaces this controller)
 
-    // With the new view caching in Ionic, Controllers are only called
-    // when they are recreated or on app start, instead of every page change.
-    // To listen for when this page is active (for example, to refresh data),
-    // listen for the $ionicView.enter event:
-    //$scope.$on('$ionicView.enter', function(e) {
-    //});
-
-    /*
-     // Create the login modal that we will use later
-     $ionicModal.fromTemplateUrl('templates/scanModal.html', {
-     scope: $scope
-     }).then(function (modal) {
-     $scope.modal = modal;
-     });
-
-     // Triggered in the login modal to close it
-     $scope.closeScan = function () {
-     $scope.modal.hide();
-     };
-
-     // Open the login modal
-     $scope.scan = function () {
-     $scope.modal.show();
-     };
-
-     // Perform the login action when the user submits the login form
-     $scope.handleScan = function () {
-     console.log('Scannned:', $scope.scanData);
-
-     // Simulate a login delay. Remove this and replace with your login
-     // code if using a login system
-     $scope.closeScan();
-     };
-     */
   })
   .controller('StartCtrl', function ($scope, $ionicModal, $state, $cordovaBarcodeScanner) {
     console.log('Creating StartCtrl');
@@ -62,6 +29,7 @@ angular.module('starter.controllers', [])
       $scope.modal.show();
     };
 
+    // Do actual scanning
     $scope.scanCode = function () {
       $cordovaBarcodeScanner
         .scan()
@@ -91,6 +59,11 @@ angular.module('starter.controllers', [])
     $scope.searchProduct = function () {
       console.log('GO TO SEARCH');
       $state.go('app.searchResult');
+    };
+
+    $scope.exitApp = function () {
+      //alert('Exiting app.');
+      ionic.Platform.exitApp();
     };
   })
 
