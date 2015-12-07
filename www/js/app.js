@@ -48,6 +48,14 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'])
                         controller: 'SearchResultCtrl'
                     }
                 }
+            })
+            .state('app.articleDetails', {
+                url: '/articleDetails/:articleDetailsId',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/articleDetails.html',
+                    }
+                }
             });
 
         /*

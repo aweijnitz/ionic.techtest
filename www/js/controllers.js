@@ -126,4 +126,6 @@ angular.module('starter.controllers', [])
     console.log('ScannerCtrl created');
 
 
+  })
+  .controller('PlaylistCtrl', function($scope, $stateParams) {
   });

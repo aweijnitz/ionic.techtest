@@ -12,6 +12,22 @@ td {
     width: 33%;
 }
 
+.table-striped {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table-striped td, .table-striped th {
+  background-color: inherit;
+  color: #000;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  padding: 0 20px;
+}
+.table-striped tr {
+  
+}
+
 .brandRed {
     color: whitesmoke;
     background-color: #db0000;
